@@ -5,6 +5,7 @@ from django.utils import timezone
 
 class Post(models.Model):
     is_boast = models.BooleanField()
+    is_roast = models.BooleanField(default=False)
     post_text = models.CharField(max_length=280)
     up_votes = models.IntegerField(default=0)
     down_votes = models.IntegerField(default=0)
